@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L ReCIA:8520_DIP U1
-U 1 1 66BF3B9F
-P 2750 3400
-F 0 "U1" H 2750 3400 50  0000 C CNN
-F 1 "8520_DIP" H 2750 2300 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm" H 2800 2050 50  0001 L CNN
-F 3 "" H 2750 3400 50  0001 C CNN
-	1    2750 3400
-	1    0    0    -1  
-$EndComp
 Text GLabel 2250 2400 0    50   Input ~ 0
 GND
 $Comp
@@ -166,4 +155,96 @@ Text GLabel 3250 2400 2    50   Output ~ 0
 CNT
 Text GLabel 3250 2500 2    50   Output ~ 0
 SP
+$Comp
+L ReCIA:8520_DIP U5
+U 1 1 66C0FD06
+P 2750 3400
+F 0 "U5" H 2750 3400 50  0000 C CNN
+F 1 "8520_DIP" H 2750 4576 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 2200 2300 50  0001 L CNN
+F 3 "" H 2750 3200 50  0001 C CNN
+	1    2750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AMS1117-3.3 U1
+U 1 1 66C15FFE
+P 2750 1250
+F 0 "U1" H 2750 1492 50  0000 C CNN
+F 1 "AMS1117-3.3" H 2750 1401 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2750 1450 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 2850 1000 50  0001 C CNN
+	1    2750 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 1650 3    50   Input ~ 0
+GND
+Text GLabel 2150 1250 0    50   Input ~ 0
+VCC
+Text GLabel 3850 1250 2    50   Output ~ 0
+3V3
+Wire Wire Line
+	2150 1250 2300 1250
+Wire Wire Line
+	3050 1250 3150 1250
+$Comp
+L Device:C C1
+U 1 1 66C1D6E1
+P 2300 1400
+F 0 "C1" H 2100 1400 50  0000 L CNN
+F 1 "10uF" H 2050 1300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2338 1250 50  0001 C CNN
+F 3 "~" H 2300 1400 50  0001 C CNN
+	1    2300 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2300 1250
+Wire Wire Line
+	2300 1250 2450 1250
+Wire Wire Line
+	2300 1550 2300 1600
+Wire Wire Line
+	2300 1600 2750 1600
+Wire Wire Line
+	2750 1600 2750 1550
+Wire Wire Line
+	2750 1650 2750 1600
+Connection ~ 2750 1600
+$Comp
+L Device:C C2
+U 1 1 66C1E80A
+P 3150 1400
+F 0 "C2" H 3265 1446 50  0000 L CNN
+F 1 "10uF" H 3265 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 3188 1250 50  0001 C CNN
+F 3 "~" H 3150 1400 50  0001 C CNN
+	1    3150 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3150 1250
+Wire Wire Line
+	2750 1600 3150 1600
+Wire Wire Line
+	3150 1600 3150 1550
+$Comp
+L Device:C_Small C3
+U 1 1 66C24424
+P 3550 1350
+F 0 "C3" H 3650 1350 50  0000 L CNN
+F 1 "0.1uF" H 3650 1250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3550 1350 50  0001 C CNN
+F 3 "~" H 3550 1350 50  0001 C CNN
+	1    3550 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1250 3550 1250
+Wire Wire Line
+	3550 1250 3850 1250
+Connection ~ 3550 1250
+Wire Wire Line
+	3150 1600 3550 1600
+Wire Wire Line
+	3550 1600 3550 1450
+Connection ~ 3150 1600
 $EndSCHEMATC
