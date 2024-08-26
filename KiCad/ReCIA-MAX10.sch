@@ -633,4 +633,27 @@ Wire Wire Line
 	3350 6550 3750 6550
 Text Label 3350 6550 0    50   ~ 0
 4V3_U3
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J1
+U 1 1 66E424CD
+P 3600 2800
+F 0 "J1" H 3650 3117 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 3650 3026 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x03_P2.00mm_Vertical_SMD" H 3600 2800 50  0001 C CNN
+F 3 "~" H 3600 2800 50  0001 C CNN
+	1    3600 2800
+	1    0    0    -1  
+$EndComp
+Text GLabel 3400 2700 0    50   Output ~ 0
+TCK
+Text GLabel 3400 2800 0    50   Input ~ 0
+TDO
+Text GLabel 3400 2900 0    50   Output ~ 0
+TMS
+Text GLabel 3900 2800 2    50   Output ~ 0
+TDI
+Text GLabel 3900 2700 2    50   Input ~ 0
+GND
+Text GLabel 3900 2900 2    50   Input ~ 0
+3V3
 $EndSCHEMATC
