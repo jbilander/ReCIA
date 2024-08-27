@@ -115,7 +115,7 @@ Text GLabel 3750 5350 0    50   Input ~ 0
 A0
 Text GLabel 3750 5250 0    50   Input ~ 0
 A1
-Text GLabel 3450 5550 0    50   Input ~ 0
+Text GLabel 3750 5650 0    50   Input ~ 0
 A2
 Text GLabel 2550 3200 2    50   BiDi ~ 0
 D0
@@ -242,136 +242,136 @@ Connection ~ 3150 1600
 $Comp
 L ReCIA:10M02SCU169 U4
 U 1 1 66C35F6F
-P 7850 3500
-F 0 "U4" H 7850 6153 60  0000 C CNN
-F 1 "10M02SCU169" H 7850 6047 60  0000 C CNN
-F 2 "ReCIA:BGA-169_11.0x11.0mm_Layout13x13_P0.8mm_Ball0.5mm_Pad0.35mm_NSMD" H 7850 3850 60  0001 C CNN
-F 3 "" H 9300 4700 60  0000 C CNN
-	1    7850 3500
+P 8200 3500
+F 0 "U4" H 8200 6153 60  0000 C CNN
+F 1 "10M02SCU169" H 8200 6047 60  0000 C CNN
+F 2 "ReCIA:BGA-169_11.0x11.0mm_Layout13x13_P0.8mm_Ball0.5mm_Pad0.35mm_NSMD" H 8200 3850 60  0001 C CNN
+F 3 "" H 9650 4700 60  0000 C CNN
+	1    8200 3500
 	1    0    0    -1  
 $EndComp
-Text GLabel 7250 4350 3    50   Input ~ 0
+Text GLabel 7600 4350 3    50   Input ~ 0
 GND
 Wire Wire Line
-	7250 4350 7350 4350
-Connection ~ 7350 4350
+	7600 4350 7700 4350
+Connection ~ 7700 4350
 Wire Wire Line
-	7350 4350 7450 4350
-Connection ~ 7450 4350
+	7700 4350 7800 4350
+Connection ~ 7800 4350
 Wire Wire Line
-	7450 4350 7550 4350
-Connection ~ 7550 4350
+	7800 4350 7900 4350
+Connection ~ 7900 4350
 Wire Wire Line
-	7550 4350 7650 4350
-Connection ~ 7650 4350
+	7900 4350 8000 4350
+Connection ~ 8000 4350
 Wire Wire Line
-	7650 4350 7750 4350
-Connection ~ 7750 4350
+	8000 4350 8100 4350
+Connection ~ 8100 4350
 Wire Wire Line
-	7750 4350 7850 4350
-Connection ~ 7850 4350
+	8100 4350 8200 4350
+Connection ~ 8200 4350
 Wire Wire Line
-	7850 4350 7950 4350
-Connection ~ 7950 4350
+	8200 4350 8300 4350
+Connection ~ 8300 4350
 Wire Wire Line
-	7950 4350 8050 4350
-Connection ~ 8050 4350
+	8300 4350 8400 4350
+Connection ~ 8400 4350
 Wire Wire Line
-	8050 4350 8150 4350
-Connection ~ 8150 4350
+	8400 4350 8500 4350
+Connection ~ 8500 4350
 Wire Wire Line
-	8150 4350 8250 4350
-Connection ~ 8250 4350
+	8500 4350 8600 4350
+Connection ~ 8600 4350
 Wire Wire Line
-	8250 4350 8350 4350
-Connection ~ 8350 4350
+	8600 4350 8700 4350
+Connection ~ 8700 4350
 Wire Wire Line
-	8350 4350 8450 4350
-Connection ~ 8450 4350
+	8700 4350 8800 4350
+Connection ~ 8800 4350
 Wire Wire Line
-	8450 4350 8550 4350
-Connection ~ 8550 4350
+	8800 4350 8900 4350
+Connection ~ 8900 4350
 Wire Wire Line
-	8550 4350 8650 4350
-Connection ~ 8650 4350
+	8900 4350 9000 4350
+Connection ~ 9000 4350
 Wire Wire Line
-	8650 4350 8750 4350
-Text GLabel 5400 2350 0    50   Input ~ 0
+	9000 4350 9100 4350
+Text GLabel 5750 2350 0    50   Input ~ 0
 TMS
-Text GLabel 5400 2550 0    50   Input ~ 0
+Text GLabel 5750 2550 0    50   Input ~ 0
 TCK
-Text GLabel 5400 2650 0    50   Input ~ 0
+Text GLabel 5750 2650 0    50   Input ~ 0
 TDI
-Text GLabel 5400 2750 0    50   Output ~ 0
+Text GLabel 5750 2750 0    50   Output ~ 0
 TDO
-Text GLabel 6050 1050 1    50   Input ~ 0
+Text GLabel 6400 1050 1    50   Input ~ 0
 3V3
 Wire Wire Line
-	6050 1050 6150 1050
-Connection ~ 6150 1050
+	6400 1050 6500 1050
+Connection ~ 6500 1050
 Wire Wire Line
-	6150 1050 6250 1050
-Connection ~ 6250 1050
+	6500 1050 6600 1050
+Connection ~ 6600 1050
 Wire Wire Line
-	6250 1050 6350 1050
-Connection ~ 6350 1050
+	6600 1050 6700 1050
+Connection ~ 6700 1050
 Wire Wire Line
-	6350 1050 6450 1050
-Connection ~ 6450 1050
+	6700 1050 6800 1050
+Connection ~ 6800 1050
 Wire Wire Line
-	6450 1050 6550 1050
-Connection ~ 6550 1050
+	6800 1050 6900 1050
+Connection ~ 6900 1050
 Wire Wire Line
-	6550 1050 6650 1050
-Connection ~ 6650 1050
+	6900 1050 7000 1050
+Connection ~ 7000 1050
 Wire Wire Line
-	6650 1050 6750 1050
-Connection ~ 6750 1050
+	7000 1050 7100 1050
+Connection ~ 7100 1050
 Wire Wire Line
-	6750 1050 6850 1050
-Connection ~ 6850 1050
+	7100 1050 7200 1050
+Connection ~ 7200 1050
 Wire Wire Line
-	6850 1050 6950 1050
-Connection ~ 6950 1050
+	7200 1050 7300 1050
+Connection ~ 7300 1050
 Wire Wire Line
-	6950 1050 7050 1050
-Connection ~ 7050 1050
+	7300 1050 7400 1050
+Connection ~ 7400 1050
 Wire Wire Line
-	7050 1050 7150 1050
-Connection ~ 7150 1050
+	7400 1050 7500 1050
+Connection ~ 7500 1050
 Wire Wire Line
-	7150 1050 7250 1050
-Connection ~ 7250 1050
+	7500 1050 7600 1050
+Connection ~ 7600 1050
 Wire Wire Line
-	7250 1050 7350 1050
+	7600 1050 7700 1050
 Wire Wire Line
-	7350 1050 7850 1050
-Connection ~ 7350 1050
-Connection ~ 7850 1050
+	7700 1050 8200 1050
+Connection ~ 7700 1050
+Connection ~ 8200 1050
 Wire Wire Line
-	7850 1050 7950 1050
-Connection ~ 7950 1050
+	8200 1050 8300 1050
+Connection ~ 8300 1050
 Wire Wire Line
-	7950 1050 8050 1050
-Connection ~ 8050 1050
+	8300 1050 8400 1050
+Connection ~ 8400 1050
 Wire Wire Line
-	8050 1050 8150 1050
-Connection ~ 8150 1050
+	8400 1050 8500 1050
+Connection ~ 8500 1050
 Wire Wire Line
-	8150 1050 8250 1050
-Connection ~ 8250 1050
+	8500 1050 8600 1050
+Connection ~ 8600 1050
 Wire Wire Line
-	8250 1050 8350 1050
-Connection ~ 8350 1050
+	8600 1050 8700 1050
+Connection ~ 8700 1050
 Wire Wire Line
-	8350 1050 8450 1050
-Connection ~ 8450 1050
+	8700 1050 8800 1050
+Connection ~ 8800 1050
 Wire Wire Line
-	8450 1050 8550 1050
-Connection ~ 8550 1050
+	8800 1050 8900 1050
+Connection ~ 8900 1050
 Wire Wire Line
-	8550 1050 8650 1050
-Text GLabel 10450 5250 2    50   Input ~ 0
+	8900 1050 9000 1050
+Text GLabel 10800 5250 2    50   Input ~ 0
 3V3
 $Comp
 L ReCIA:SN74CBT16210 U2
@@ -498,15 +498,13 @@ Text GLabel 2400 6550 2    50   BiDi ~ 0
 D4_3V3
 Text GLabel 2400 6450 2    50   BiDi ~ 0
 D3_3V3
-Text GLabel 3450 5650 0    50   Input ~ 0
+Text GLabel 3750 5750 0    50   Input ~ 0
 A3
-Text GLabel 3450 5750 0    50   Input ~ 0
-RESET
 Text GLabel 2550 3100 2    50   Output ~ 0
 RESET
-Text GLabel 3100 5500 2    50   BiDi ~ 0
+Text GLabel 3750 6050 0    50   BiDi ~ 0
 D0
-Text GLabel 3100 5600 2    50   BiDi ~ 0
+Text GLabel 3750 6150 0    50   BiDi ~ 0
 D1
 Text GLabel 2550 3000 2    50   Output ~ 0
 A3
@@ -676,57 +674,57 @@ Text GLabel 1400 6050 0    50   BiDi ~ 0
 PB2
 Text GLabel 1400 6150 0    50   BiDi ~ 0
 PB1
-Text GLabel 2900 4800 0    50   BiDi ~ 0
+Text GLabel 3750 6250 0    50   BiDi ~ 0
 D2
-Text GLabel 3100 4800 2    50   BiDi ~ 0
+Text GLabel 4750 6350 2    50   BiDi ~ 0
 D2_3V3
 Text GLabel 1400 6250 0    50   BiDi ~ 0
 PB0
 Text GLabel 2400 6350 2    50   BiDi ~ 0
 PB0_3V3
-Text GLabel 10300 3650 2    50   Input ~ 0
+Text GLabel 10650 3650 2    50   Input ~ 0
 E-CLK_3V3
-Text GLabel 10300 3750 2    50   Input ~ 0
+Text GLabel 10650 3750 2    50   Input ~ 0
 GND
-Text GLabel 8900 5950 3    50   Input ~ 0
+Text GLabel 9250 5950 3    50   Input ~ 0
 FLAG_3V3
-Text GLabel 8700 5950 3    50   Input ~ 0
+Text GLabel 9050 5950 3    50   Input ~ 0
 CS_3V3
-Text GLabel 7200 5950 3    50   Input ~ 0
+Text GLabel 7550 5950 3    50   Input ~ 0
 RW_3V3
-Text GLabel 7600 5950 3    50   Output ~ 0
+Text GLabel 7950 5950 3    50   Output ~ 0
 IRQ_3V3
-Text GLabel 7100 5950 3    50   BiDi ~ 0
+Text GLabel 7450 5950 3    50   BiDi ~ 0
 D7_3V3
-Text GLabel 6900 5950 3    50   BiDi ~ 0
+Text GLabel 7250 5950 3    50   BiDi ~ 0
 D6_3V3
-Text GLabel 7300 5950 3    50   BiDi ~ 0
+Text GLabel 7650 5950 3    50   BiDi ~ 0
 D5_3V3
-Text GLabel 7500 5950 3    50   BiDi ~ 0
+Text GLabel 7850 5950 3    50   BiDi ~ 0
 D4_3V3
-Text GLabel 6300 5950 3    50   BiDi ~ 0
+Text GLabel 6650 5950 3    50   BiDi ~ 0
 D3_3V3
-Text GLabel 5400 4950 0    50   BiDi ~ 0
+Text GLabel 5750 4950 0    50   BiDi ~ 0
 PB4_3V3
-Text GLabel 5400 5150 0    50   BiDi ~ 0
+Text GLabel 5750 5150 0    50   BiDi ~ 0
 PB3_3V3
-Text GLabel 5400 5550 0    50   BiDi ~ 0
+Text GLabel 5750 5550 0    50   BiDi ~ 0
 PB2_3V3
-Text GLabel 6000 5950 3    50   BiDi ~ 0
+Text GLabel 6350 5950 3    50   BiDi ~ 0
 PB1_3V3
-Text GLabel 6100 5950 3    50   BiDi ~ 0
+Text GLabel 6450 5950 3    50   BiDi ~ 0
 PB0_3V3
-Text GLabel 5400 5350 0    50   BiDi ~ 0
+Text GLabel 5750 5350 0    50   BiDi ~ 0
 PB5_3V3
-Text GLabel 5400 4250 0    50   BiDi ~ 0
+Text GLabel 5750 4250 0    50   BiDi ~ 0
 PB7_3V3
-Text GLabel 5400 4050 0    50   BiDi ~ 0
+Text GLabel 5750 4050 0    50   BiDi ~ 0
 PB6_3V3
-Text GLabel 5400 3750 0    50   Output ~ 0
+Text GLabel 5750 3750 0    50   Output ~ 0
 PC_3V3
-Text GLabel 5400 3450 0    50   Input ~ 0
+Text GLabel 5750 3450 0    50   Input ~ 0
 TOD_3V3
-Text GLabel 10300 3550 2    50   Input ~ 0
+Text GLabel 10650 3550 2    50   Input ~ 0
 GND
 $Comp
 L Oscillator:SG-8002CE X1
@@ -782,6 +780,42 @@ F 3 "~" H 4000 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4000 4100 4000 4250
-Text GLabel 10300 3450 2    50   Input ~ 0
+Text GLabel 10650 3450 2    50   Input ~ 0
 XTAL_28M
+Text GLabel 3750 5950 0    50   Input ~ 0
+RESET
+Text GLabel 4750 6250 2    50   BiDi ~ 0
+D1_3V3
+Text GLabel 4750 6150 2    50   BiDi ~ 0
+D0_3V3
+Text GLabel 4750 6050 2    50   Output ~ 0
+RESET_3V3
+Text GLabel 4750 5950 2    50   Output ~ 0
+A3_3V3
+Text GLabel 4750 5750 2    50   Output ~ 0
+A2_3V3
+Text GLabel 4750 5650 2    50   Input ~ 0
+CNT_3V3
+Text GLabel 4750 5550 2    50   Input ~ 0
+SP_3V3
+Text GLabel 4750 5450 2    50   Output ~ 0
+A0_3V3
+Text GLabel 4750 5350 2    50   Output ~ 0
+A1_3V3
+Text GLabel 4750 6650 2    50   BiDi ~ 0
+PA7_3V3
+Text GLabel 4750 6850 2    50   BiDi ~ 0
+PA6_3V3
+Text GLabel 4750 6950 2    50   BiDi ~ 0
+PA5_3V3
+Text GLabel 4750 7050 2    50   BiDi ~ 0
+PA4_3V3
+Text GLabel 4750 7150 2    50   BiDi ~ 0
+PA3_3V3
+Text GLabel 4750 7250 2    50   BiDi ~ 0
+PA0_3V3
+Text GLabel 4750 7350 2    50   BiDi ~ 0
+PA1_3V3
+Text GLabel 4750 7450 2    50   BiDi ~ 0
+PA2_3V3
 $EndSCHEMATC
