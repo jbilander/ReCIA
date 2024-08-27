@@ -111,11 +111,11 @@ Text GLabel 1550 4000 0    50   BiDi ~ 0
 PB6
 Text GLabel 1550 4100 0    50   BiDi ~ 0
 PB7
-Text GLabel 3650 5350 0    50   Input ~ 0
+Text GLabel 3750 5350 0    50   Input ~ 0
 A0
-Text GLabel 3650 5450 0    50   Input ~ 0
+Text GLabel 3750 5250 0    50   Input ~ 0
 A1
-Text GLabel 3650 5550 0    50   Input ~ 0
+Text GLabel 3450 5550 0    50   Input ~ 0
 A2
 Text GLabel 2550 3200 2    50   BiDi ~ 0
 D0
@@ -143,9 +143,9 @@ Text GLabel 2550 4200 2    50   Output ~ 0
 CS
 Text GLabel 2550 4300 2    50   Output ~ 0
 RW
-Text GLabel 3650 5150 0    50   Output ~ 0
+Text GLabel 3750 5550 0    50   Output ~ 0
 CNT
-Text GLabel 3650 5250 0    50   Output ~ 0
+Text GLabel 3750 5450 0    50   Output ~ 0
 SP
 $Comp
 L ReCIA:8520_DIP U5
@@ -498,9 +498,9 @@ Text GLabel 2400 6550 2    50   BiDi ~ 0
 D4_3V3
 Text GLabel 2400 6450 2    50   BiDi ~ 0
 D3_3V3
-Text GLabel 3650 5650 0    50   Input ~ 0
+Text GLabel 3450 5650 0    50   Input ~ 0
 A3
-Text GLabel 3650 5750 0    50   Input ~ 0
+Text GLabel 3450 5750 0    50   Input ~ 0
 RESET
 Text GLabel 2550 3100 2    50   Output ~ 0
 RESET
@@ -726,4 +726,8 @@ Text GLabel 5400 3750 0    50   Output ~ 0
 PC_3V3
 Text GLabel 5400 3450 0    50   Input ~ 0
 TOD_3V3
+Text GLabel 10300 3450 2    50   Input ~ 0
+OSC_CLK
+Text GLabel 10300 3550 2    50   Input ~ 0
+GND
 $EndSCHEMATC
