@@ -442,7 +442,7 @@ U 1 1 66D7E33E
 P 750 6700
 F 0 "R1" H 500 6750 50  0000 L CNN
 F 1 "2.9k" H 500 6650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 750 6700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 750 6700 50  0001 C CNN
 F 3 "~" H 750 6700 50  0001 C CNN
 	1    750  6700
 	1    0    0    -1  
@@ -470,10 +470,10 @@ Connection ~ 750  6550
 Wire Wire Line
 	750  6550 750  6600
 $Comp
-L Device:C_Small C4
+L Device:C_Small C5
 U 1 1 66D9BFBA
 P 1000 6650
-F 0 "C4" H 900 6550 50  0000 L CNN
+F 0 "C5" H 900 6550 50  0000 L CNN
 F 1 "0.1uF" H 900 6450 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 1000 6650 50  0001 C CNN
 F 3 "~" H 1000 6650 50  0001 C CNN
@@ -551,7 +551,7 @@ U 1 1 66E2D6F2
 P 3100 6700
 F 0 "R2" H 2850 6750 50  0000 L CNN
 F 1 "2.9k" H 2850 6650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3100 6700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3100 6700 50  0001 C CNN
 F 3 "~" H 3100 6700 50  0001 C CNN
 	1    3100 6700
 	1    0    0    -1  
@@ -579,10 +579,10 @@ Connection ~ 3100 6550
 Wire Wire Line
 	3100 6550 3100 6600
 $Comp
-L Device:C_Small C5
+L Device:C_Small C6
 U 1 1 66E2D70C
 P 3350 6650
-F 0 "C5" H 3250 6550 50  0000 L CNN
+F 0 "C6" H 3250 6550 50  0000 L CNN
 F 1 "0.1uF" H 3250 6450 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3350 6650 50  0001 C CNN
 F 3 "~" H 3350 6650 50  0001 C CNN
@@ -726,8 +726,62 @@ Text GLabel 5400 3750 0    50   Output ~ 0
 PC_3V3
 Text GLabel 5400 3450 0    50   Input ~ 0
 TOD_3V3
-Text GLabel 10300 3450 2    50   Input ~ 0
-OSC_CLK
 Text GLabel 10300 3550 2    50   Input ~ 0
 GND
+$Comp
+L Oscillator:SG-8002CE X1
+U 1 1 66F84126
+P 3700 3700
+F 0 "X1" H 4044 3746 50  0000 L CNN
+F 1 "Oscillator_3.2x2.5mm-28.6363MHz" H 3050 4150 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CE-4Pin_3.2x2.5mm" H 4400 3350 50  0001 C CNN
+F 3 "https://support.epson.biz/td/api/doc_check.php?mode=dl&lang=en&Parts=SG-8002DC" H 3600 3700 50  0001 C CNN
+	1    3700 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 3400 3400 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	3700 3400 3400 3400
+Wire Wire Line
+	3400 3400 3400 3550
+$Comp
+L Device:C_Small C4
+U 1 1 66FA138D
+P 3300 3550
+F 0 "C4" V 3350 3250 50  0000 L CNN
+F 1 "0.1uF" V 3250 3250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3300 3550 50  0001 C CNN
+F 3 "~" H 3300 3550 50  0001 C CNN
+	1    3300 3550
+	0    1    1    0   
+$EndComp
+Connection ~ 3400 3550
+Wire Wire Line
+	3400 3550 3400 3700
+Wire Wire Line
+	3200 3550 3200 4000
+Wire Wire Line
+	3200 4000 3700 4000
+Text GLabel 3200 4000 3    50   Input ~ 0
+GND
+Text GLabel 4000 4250 3    50   Output ~ 0
+XTAL_28M
+Wire Wire Line
+	4000 3700 4000 3900
+$Comp
+L Device:R_Small R3
+U 1 1 66FDE051
+P 4000 4000
+F 0 "R3" H 4050 4000 50  0000 L CNN
+F 1 "33" V 4000 3950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4000 4000 50  0001 C CNN
+F 3 "~" H 4000 4000 50  0001 C CNN
+	1    4000 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4100 4000 4250
+Text GLabel 10300 3450 2    50   Input ~ 0
+XTAL_28M
 $EndSCHEMATC
