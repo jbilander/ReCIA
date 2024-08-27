@@ -240,10 +240,10 @@ Wire Wire Line
 	3550 1600 3550 1450
 Connection ~ 3150 1600
 $Comp
-L ReCIA:10M02SCU169 U2
+L ReCIA:10M02SCU169 U4
 U 1 1 66C35F6F
 P 7850 3500
-F 0 "U2" H 7850 6153 60  0000 C CNN
+F 0 "U4" H 7850 6153 60  0000 C CNN
 F 1 "10M02SCU169" H 7850 6047 60  0000 C CNN
 F 2 "ReCIA:BGA-169_11.0x11.0mm_Layout13x13_P0.8mm_Ball0.5mm_Pad0.35mm_NSMD" H 7850 3850 60  0001 C CNN
 F 3 "" H 9300 4700 60  0000 C CNN
@@ -371,13 +371,13 @@ Wire Wire Line
 Connection ~ 8550 1050
 Wire Wire Line
 	8550 1050 8650 1050
-Text GLabel 10300 5250 2    50   Input ~ 0
+Text GLabel 10450 5250 2    50   Input ~ 0
 3V3
 $Comp
-L ReCIA:SN74CBT16210 U3
+L ReCIA:SN74CBT16210 U2
 U 1 1 66D14302
 P 1900 6250
-F 0 "U3" H 1900 7617 50  0000 C CNN
+F 0 "U2" H 1900 7617 50  0000 C CNN
 F 1 "SN74CBT16210" H 1900 7526 50  0000 C CNN
 F 2 "Package_SO:TSSOP-48_4.4x9.7mm_P0.4mm" H 3550 6700 50  0001 C CNN
 F 3 "" H 3550 6700 50  0001 C CNN
@@ -493,24 +493,20 @@ Wire Wire Line
 Text GLabel 2400 6650 2    50   BiDi ~ 0
 D5_3V3
 Text Label 1000 6550 0    50   ~ 0
-4V3_U3
+4V3_U2
 Text GLabel 2400 6550 2    50   BiDi ~ 0
 D4_3V3
 Text GLabel 2400 6450 2    50   BiDi ~ 0
 D3_3V3
-Text GLabel 1400 6250 0    50   BiDi ~ 0
-D2
-Text GLabel 2400 6350 2    50   BiDi ~ 0
-D2_3V3
 Text GLabel 3650 5650 0    50   Input ~ 0
 A3
 Text GLabel 3650 5750 0    50   Input ~ 0
 RESET
 Text GLabel 2550 3100 2    50   Output ~ 0
 RESET
-Text GLabel 3500 5850 2    50   BiDi ~ 0
+Text GLabel 3100 5500 2    50   BiDi ~ 0
 D0
-Text GLabel 3500 5950 2    50   BiDi ~ 0
+Text GLabel 3100 5600 2    50   BiDi ~ 0
 D1
 Text GLabel 2550 3000 2    50   Output ~ 0
 A3
@@ -524,47 +520,19 @@ Text GLabel 2550 2600 2    50   Input ~ 0
 SP
 Text GLabel 2550 2500 2    50   Input ~ 0
 CNT
-Text GLabel 1400 6150 0    50   Input ~ 0
-TOD
-Text GLabel 1400 6050 0    50   Output ~ 0
-PC
-Text GLabel 2400 6250 2    50   Output ~ 0
+Text GLabel 2400 5650 2    50   Output ~ 0
 TOD_3V3
-Text GLabel 2400 6150 2    50   Input ~ 0
+Text GLabel 2400 5550 2    50   Input ~ 0
 PC_3V3
-Text GLabel 1400 5250 0    50   BiDi ~ 0
-PB1
-Text GLabel 1400 5350 0    50   BiDi ~ 0
-PB2
-Text GLabel 1400 5450 0    50   BiDi ~ 0
-PB3
-Text GLabel 1400 5550 0    50   BiDi ~ 0
-PB4
-Text GLabel 1400 5650 0    50   BiDi ~ 0
-PB5
-Text GLabel 1400 5750 0    50   BiDi ~ 0
-PB6
-Text GLabel 1400 5950 0    50   BiDi ~ 0
-PB7
-Text GLabel 2400 6050 2    50   BiDi ~ 0
-PB7_3V3
-Text GLabel 2400 5950 2    50   BiDi ~ 0
-PB6_3V3
-Text GLabel 2400 5350 2    50   BiDi ~ 0
-PB1_3V3
 Text GLabel 2400 5450 2    50   BiDi ~ 0
-PB2_3V3
-Text GLabel 2400 5550 2    50   BiDi ~ 0
-PB3_3V3
-Text GLabel 2400 5650 2    50   BiDi ~ 0
-PB4_3V3
-Text GLabel 2400 5750 2    50   BiDi ~ 0
-PB5_3V3
+PB7_3V3
+Text GLabel 2400 5350 2    50   BiDi ~ 0
+PB6_3V3
 $Comp
-L ReCIA:SN74CBT16210 U4
+L ReCIA:SN74CBT16210 U3
 U 1 1 66E12D1D
 P 4250 6250
-F 0 "U4" H 4250 7617 50  0000 C CNN
+F 0 "U3" H 4250 7617 50  0000 C CNN
 F 1 "SN74CBT16210" H 4250 7526 50  0000 C CNN
 F 2 "Package_SO:TSSOP-48_4.4x9.7mm_P0.4mm" H 5900 6700 50  0001 C CNN
 F 3 "" H 5900 6700 50  0001 C CNN
@@ -656,4 +624,74 @@ Text GLabel 3900 2700 2    50   Input ~ 0
 GND
 Text GLabel 3900 2900 2    50   Input ~ 0
 3V3
+Text GLabel 3750 7450 0    50   BiDi ~ 0
+PA2
+Text GLabel 3750 7350 0    50   BiDi ~ 0
+PA1
+Text GLabel 3750 7250 0    50   BiDi ~ 0
+PA0
+Text GLabel 3750 7150 0    50   BiDi ~ 0
+PA3
+Text GLabel 3750 7050 0    50   BiDi ~ 0
+PA4
+Text GLabel 3750 6950 0    50   BiDi ~ 0
+PA5
+Text GLabel 3750 6850 0    50   BiDi ~ 0
+PA6
+Text GLabel 3750 6650 0    50   BiDi ~ 0
+PA7
+Text GLabel 3750 6750 0    50   Input ~ 0
+GND
+Text GLabel 4750 6750 2    50   Input ~ 0
+GND
+Text GLabel 4750 5850 2    50   Input ~ 0
+GND
+Text GLabel 3750 5850 0    50   Input ~ 0
+GND
+Text GLabel 1400 5350 0    50   BiDi ~ 0
+PB7
+Text GLabel 1400 5250 0    50   BiDi ~ 0
+PB6
+Text GLabel 1400 5450 0    50   Output ~ 0
+PC
+Text GLabel 1400 5550 0    50   Input ~ 0
+TOD
+Text GLabel 1400 5650 0    50   BiDi ~ 0
+PB5
+Text GLabel 2400 5750 2    50   BiDi ~ 0
+PB5_3V3
+Text GLabel 1400 5750 0    50   BiDi ~ 0
+PB4
+Text GLabel 2400 5950 2    50   BiDi ~ 0
+PB4_3V3
+Text GLabel 2400 6050 2    50   BiDi ~ 0
+PB3_3V3
+Text GLabel 2400 6150 2    50   BiDi ~ 0
+PB2_3V3
+Text GLabel 2400 6250 2    50   BiDi ~ 0
+PB1_3V3
+Text GLabel 1400 5950 0    50   BiDi ~ 0
+PB3
+Text GLabel 1400 6050 0    50   BiDi ~ 0
+PB2
+Text GLabel 1400 6150 0    50   BiDi ~ 0
+PB1
+Text GLabel 2900 4800 0    50   BiDi ~ 0
+D2
+Text GLabel 3100 4800 2    50   BiDi ~ 0
+D2_3V3
+Text GLabel 1400 6250 0    50   BiDi ~ 0
+PB0
+Text GLabel 2400 6350 2    50   BiDi ~ 0
+PB0_3V3
+Text GLabel 10300 3650 2    50   Input ~ 0
+E-CLK_3V3
+Text GLabel 10300 3750 2    50   Input ~ 0
+GND
+Text GLabel 8900 5950 3    50   Input ~ 0
+FLAG_3V3
+Text GLabel 8700 5950 3    50   Input ~ 0
+CS_3V3
+Text GLabel 7200 5950 3    50   Input ~ 0
+RW_3V3
 $EndSCHEMATC
