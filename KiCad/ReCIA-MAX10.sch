@@ -371,8 +371,6 @@ Wire Wire Line
 Connection ~ 8900 1050
 Wire Wire Line
 	8900 1050 9000 1050
-Text GLabel 10800 5250 2    50   Input ~ 0
-3V3
 $Comp
 L ReCIA:SN74CBT16210 U2
 U 1 1 66D14302
@@ -817,5 +815,41 @@ PA0_3V3
 Text GLabel 4750 7350 2    50   BiDi ~ 0
 PA1_3V3
 Text GLabel 4750 7450 2    50   BiDi ~ 0
+PA2_3V3
+Text GLabel 3750 6350 0    50   Input ~ 0
+GND
+Wire Wire Line
+	3750 6350 3750 6450
+NoConn ~ 4750 6450
+NoConn ~ 4750 6550
+Text GLabel 10650 5150 2    50   Input ~ 0
+A1_3V3
+Text GLabel 10650 2350 2    50   Input ~ 0
+A0_3V3
+Text GLabel 10650 2150 2    50   Input ~ 0
+A2_3V3
+Text GLabel 10650 1950 2    50   Input ~ 0
+A3_3V3
+Text GLabel 10650 1750 2    50   Input ~ 0
+RESET_3V3
+Text GLabel 10650 4350 2    50   Output ~ 0
+CNT_3V3
+Text GLabel 10650 4950 2    50   Output ~ 0
+SP_3V3
+Text GLabel 10650 2850 2    50   BiDi ~ 0
+PA7_3V3
+Text GLabel 10650 3050 2    50   BiDi ~ 0
+PA6_3V3
+Text GLabel 9500 1050 1    50   BiDi ~ 0
+PA5_3V3
+Text GLabel 10650 3250 2    50   BiDi ~ 0
+PA4_3V3
+Text GLabel 10100 1050 1    50   BiDi ~ 0
+PA3_3V3
+Text GLabel 5750 1550 0    50   BiDi ~ 0
+PA0_3V3
+Text GLabel 5750 1750 0    50   BiDi ~ 0
+PA1_3V3
+Text GLabel 9300 1050 1    50   BiDi ~ 0
 PA2_3V3
 $EndSCHEMATC
