@@ -852,4 +852,10 @@ Text GLabel 5750 1750 0    50   BiDi ~ 0
 PA1_3V3
 Text GLabel 9300 1050 1    50   BiDi ~ 0
 PA2_3V3
+Text GLabel 10650 2250 2    50   BiDi ~ 0
+D0_3V3
+Text GLabel 10650 2650 2    50   BiDi ~ 0
+D1_3V3
+Text GLabel 10650 3150 2    50   BiDi ~ 0
+D2_3V3
 $EndSCHEMATC
