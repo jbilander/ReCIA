@@ -1109,4 +1109,6 @@ Text Notes 2650 6800 0    50   ~ 0
 0603   0.01uF
 Text GLabel 10650 2750 2    50   Input ~ 0
 GND
+Text GLabel 10650 2950 2    50   Input ~ 0
+nCONFIG
 $EndSCHEMATC
