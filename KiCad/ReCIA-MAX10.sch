@@ -1111,4 +1111,6 @@ Text GLabel 10650 2750 2    50   Input ~ 0
 GND
 Text GLabel 10650 2950 2    50   Input ~ 0
 nCONFIG
+Text GLabel 9600 1050 1    50   Input ~ 0
+nSTATUS
 $EndSCHEMATC
