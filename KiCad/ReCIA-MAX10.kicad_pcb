@@ -500,6 +500,11 @@
       (net 41 3V3))
     (pad 1 smd rect (at -0.875 1.2 180) (size 0.97 0.53) (layers B.Cu B.Paste B.Mask)
       (net 41 3V3))
+    (model ${KIPRJMOD}/packages3d/cay16-103j4lf.step
+      (offset (xyz 0 -1.6 0.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer B.Cu) (tedit 5F68FEEE) (tstamp 66DCD271)
