@@ -1115,4 +1115,29 @@ Text GLabel 9600 1050 1    50   Input ~ 0
 nSTATUS
 Text GLabel 9400 1050 1    50   Input ~ 0
 CONF_DONE
+$Comp
+L Device:R_Pack04 RN1
+U 1 1 672BF603
+P 5500 6900
+F 0 "RN1" H 5688 6946 50  0000 L CNN
+F 1 "R_Pack04" H 5688 6855 50  0000 L CNN
+F 2 "ReCIA:RESCAF80P320X160X60-8N" V 5775 6900 50  0001 C CNN
+F 3 "~" H 5500 6900 50  0001 C CNN
+	1    5500 6900
+	1    0    0    -1  
+$EndComp
+Text GLabel 5600 6700 1    50   Input ~ 0
+GND
+Text GLabel 5600 7100 3    50   Input ~ 0
+TCK
+Text GLabel 5300 7100 3    50   Input ~ 0
+3V3
+Wire Wire Line
+	5300 7100 5400 7100
+Text GLabel 5300 6700 1    50   Input ~ 0
+TMS
+Text GLabel 5400 6700 1    50   Input ~ 0
+TDI
+NoConn ~ 5500 6700
+NoConn ~ 5500 7100
 $EndSCHEMATC
