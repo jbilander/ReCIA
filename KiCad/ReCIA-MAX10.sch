@@ -1168,4 +1168,8 @@ Wire Wire Line
 	6100 7150 6200 7150
 Connection ~ 6100 7150
 NoConn ~ 5900 6750
+Text GLabel 5750 3650 0    50   Input ~ 0
+GND
+Text GLabel 5750 3850 0    50   Input ~ 0
+GND
 $EndSCHEMATC
