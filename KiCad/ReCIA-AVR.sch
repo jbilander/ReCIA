@@ -260,21 +260,21 @@ Text GLabel 5200 1650 1    50   BiDi ~ 0
 PA6
 Text GLabel 5100 1650 1    50   BiDi ~ 0
 PA7
-Text GLabel 4400 2750 0    50   Input ~ 0
+Text GLabel 4900 1650 1    50   Input ~ 0
 A0
-Text GLabel 4400 2850 0    50   Input ~ 0
+Text GLabel 4800 1650 1    50   Input ~ 0
 A1
-Text GLabel 4400 2950 0    50   Input ~ 0
+Text GLabel 4400 2650 0    50   Input ~ 0
 A2
-Text GLabel 4400 3050 0    50   Input ~ 0
+Text GLabel 4400 2750 0    50   Input ~ 0
 A3
 Text GLabel 6100 1650 1    50   BiDi ~ 0
 UDPI
 Text GLabel 5000 1650 1    50   Input ~ 0
 EXTCLK
-Text GLabel 4300 2100 1    50   Output ~ 0
+Text GLabel 4400 2950 0    50   Output ~ 0
 CNT
-Text GLabel 4200 2300 2    50   Output ~ 0
+Text GLabel 4400 2850 0    50   Output ~ 0
 SP
 NoConn ~ 6600 3150
 NoConn ~ 6600 3250
@@ -394,4 +394,5 @@ Wire Wire Line
 	5100 5100 5150 5100
 Wire Wire Line
 	5150 5100 5150 5250
+NoConn ~ 4400 3050
 $EndSCHEMATC
