@@ -399,10 +399,32 @@ $EndComp
 Text GLabel 2200 1900 0    50   Input ~ 0
 GND
 NoConn ~ 2200 1700
-Text GLabel 3300 1800 2    50   Input ~ 0
+Text GLabel 3500 1800 2    50   Input ~ 0
 VCC
 Text GLabel 3250 3900 2    50   Input ~ 0
 E
 Text GLabel 2200 1800 0    50   Input ~ 0
 E
+$Comp
+L Device:C_Small C?
+U 1 1 677B6FA1
+P 3400 2000
+F 0 "C?" H 3500 2000 50  0000 L CNN
+F 1 "0.1uF" H 3450 1900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3400 2000 50  0001 C CNN
+F 3 "~" H 3400 2000 50  0001 C CNN
+	1    3400 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 1800 3400 1800
+Wire Wire Line
+	3400 1900 3400 1800
+Connection ~ 3400 1800
+Wire Wire Line
+	3400 1800 3500 1800
+Wire Wire Line
+	3400 2100 2200 2100
+Wire Wire Line
+	2200 2100 2200 1900
 $EndSCHEMATC
