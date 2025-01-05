@@ -137,7 +137,7 @@ Text GLabel 3250 3700 2    50   BiDi ~ 0
 D6
 Text GLabel 3250 3800 2    50   BiDi ~ 0
 D7
-Text GLabel 3300 1700 2    50   Output ~ 0
+Text GLabel 3850 1600 2    50   Output ~ 0
 E-CLK
 Text GLabel 2250 4100 0    50   Output ~ 0
 PC
@@ -406,10 +406,10 @@ E
 Text GLabel 2200 1800 0    50   Input ~ 0
 E
 $Comp
-L Device:C_Small C?
+L Device:C_Small C5
 U 1 1 677B6FA1
 P 3400 2000
-F 0 "C?" H 3500 2000 50  0000 L CNN
+F 0 "C5" H 3500 2000 50  0000 L CNN
 F 1 "0.1uF" H 3450 1900 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3400 2000 50  0001 C CNN
 F 3 "~" H 3400 2000 50  0001 C CNN
@@ -427,4 +427,25 @@ Wire Wire Line
 	3400 2100 2200 2100
 Wire Wire Line
 	2200 2100 2200 1900
+$Comp
+L Device:R_Small R?
+U 1 1 677C3D65
+P 3600 1600
+F 0 "R?" V 3496 1600 50  0000 C CNN
+F 1 "33" V 3495 1600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3600 1600 50  0001 C CNN
+F 3 "~" H 3600 1600 50  0001 C CNN
+	1    3600 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 1700 3400 1700
+Wire Wire Line
+	3400 1700 3400 1600
+Wire Wire Line
+	3400 1600 3500 1600
+Wire Wire Line
+	3700 1600 3850 1600
+Text Label 3400 1600 1    50   ~ 0
+ECLK
 $EndSCHEMATC
