@@ -137,7 +137,7 @@ Text GLabel 3250 3700 2    50   BiDi ~ 0
 D6
 Text GLabel 3250 3800 2    50   BiDi ~ 0
 D7
-Text GLabel 3250 3900 2    50   Input ~ 0
+Text GLabel 3300 1700 2    50   Output ~ 0
 E-CLK
 Text GLabel 2250 4100 0    50   Output ~ 0
 PC
@@ -292,16 +292,6 @@ NoConn ~ 6600 2850
 NoConn ~ 6600 2750
 NoConn ~ 6600 2650
 NoConn ~ 6300 1650
-Text GLabel 2750 1750 3    50   Input ~ 0
-GND
-Text GLabel 2750 1150 1    50   Input ~ 0
-VCC
-Wire Wire Line
-	2450 1450 2450 1150
-Wire Wire Line
-	2450 1150 2750 1150
-Text GLabel 3050 1450 2    50   Output ~ 0
-CLK
 $Comp
 L Device:C_Small C1
 U 1 1 66CAF364
@@ -395,4 +385,24 @@ Wire Wire Line
 Wire Wire Line
 	5150 5100 5150 5250
 NoConn ~ 4400 3050
+$Comp
+L ReCIA:74AHCT1G17 U2
+U 1 1 677A8B23
+P 2750 1800
+F 0 "U2" H 2750 2165 50  0000 C CNN
+F 1 "74AHCT1G17" H 2750 2074 50  0000 C CNN
+F 2 "ReCIA:SOT95P275X110-5N" H 3150 2000 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT1G17.pdf" H 3150 1900 50  0001 L CNN
+	1    2750 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel 2200 1900 0    50   Input ~ 0
+GND
+NoConn ~ 2200 1700
+Text GLabel 3300 1800 2    50   Input ~ 0
+VCC
+Text GLabel 3250 3900 2    50   Input ~ 0
+E
+Text GLabel 2200 1800 0    50   Input ~ 0
+E
 $EndSCHEMATC
