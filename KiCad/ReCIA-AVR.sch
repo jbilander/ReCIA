@@ -46,7 +46,7 @@ Wire Wire Line
 Connection ~ 1050 1150
 Wire Wire Line
 	1050 1150 1050 1200
-Text GLabel 2250 4300 0    50   Input ~ 0
+Text GLabel 1800 4300 0    50   Input ~ 0
 VCC
 $Comp
 L power:PWR_FLAG #FLG0102
@@ -293,10 +293,10 @@ NoConn ~ 6600 2750
 NoConn ~ 6600 2650
 NoConn ~ 6300 1650
 $Comp
-L Device:C_Small C1
+L Device:C_Small C6
 U 1 1 66CAF364
 P 4000 3200
-F 0 "C1" H 4100 3200 50  0000 L CNN
+F 0 "C6" H 4100 3200 50  0000 L CNN
 F 1 "0.01uF (0402)" V 3850 2950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 4000 3200 50  0001 C CNN
 F 3 "~" H 4000 3200 50  0001 C CNN
@@ -459,4 +459,22 @@ F 3 "http://www.ti.com/lit/gpn/TLC2932A" H 9400 3200 50  0001 L CNN
 	1    8650 2950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C1
+U 1 1 677E2BF6
+P 2050 4450
+F 0 "C1" H 2165 4496 50  0000 L CNN
+F 1 "C" H 2165 4405 50  0001 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2088 4300 50  0001 C CNN
+F 3 "~" H 2050 4450 50  0001 C CNN
+	1    2050 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4300 2050 4300
+Connection ~ 2050 4300
+Wire Wire Line
+	2050 4300 2250 4300
+Text GLabel 2050 4600 3    50   Input ~ 0
+GND
 $EndSCHEMATC
