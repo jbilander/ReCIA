@@ -582,19 +582,8 @@ Text GLabel 10150 2500 1    50   Input ~ 0
 GND
 Text GLabel 9200 2350 1    50   Input ~ 0
 VCC
-Text GLabel 9900 3100 2    50   Input ~ 0
+Text GLabel 9550 3000 2    50   Input ~ 0
 GND
-Wire Wire Line
-	9550 3000 9900 3000
-Wire Wire Line
-	9900 3000 9900 3100
-Wire Wire Line
-	9550 3100 9900 3100
-Wire Wire Line
-	9550 3200 9900 3200
-Wire Wire Line
-	9900 3200 9900 3100
-Connection ~ 9900 3100
 Text Label 7700 2550 2    50   ~ 0
 LOGIC_VDD
 Text Label 10550 2700 0    50   ~ 0
@@ -604,11 +593,6 @@ Wire Wire Line
 Connection ~ 10250 2700
 Text GLabel 7850 3300 0    50   Input ~ 0
 GND
-Wire Wire Line
-	9550 3300 9900 3300
-Wire Wire Line
-	9900 3300 9900 3200
-Connection ~ 9900 3200
 Text GLabel 7850 3000 0    50   Input ~ 0
 E-CLK
 Text GLabel 7250 2750 0    50   Output ~ 0
@@ -633,5 +617,40 @@ Wire Wire Line
 Wire Wire Line
 	7650 2900 7850 2900
 Text Label 7650 2900 2    50   ~ 0
-EXT-CLK
+VCO_OUT
+$Comp
+L Device:R_Small R3
+U 1 1 678A30D6
+P 10000 3100
+F 0 "R3" V 10000 3100 50  0000 C CNN
+F 1 "33" V 9895 3100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 10000 3100 50  0001 C CNN
+F 3 "~" H 10000 3100 50  0001 C CNN
+	1    10000 3100
+	1    0    0    -1  
+$EndComp
+Text Label 9550 2900 0    50   ~ 0
+VCO_IN
+Wire Wire Line
+	9550 3000 9550 3100
+Connection ~ 9550 3100
+Wire Wire Line
+	9550 3100 9550 3200
+Connection ~ 9550 3200
+Wire Wire Line
+	9550 3200 9550 3300
+Wire Wire Line
+	9550 2900 10000 2900
+Wire Wire Line
+	7850 3200 7600 3200
+Wire Wire Line
+	7600 3200 7600 3500
+Wire Wire Line
+	7600 3500 10000 3500
+Text Label 9550 3500 0    50   ~ 0
+PFD_OUT
+Wire Wire Line
+	10000 3500 10000 3200
+Wire Wire Line
+	10000 3000 10000 2900
 $EndSCHEMATC
