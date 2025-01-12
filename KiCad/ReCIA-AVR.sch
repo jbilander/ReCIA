@@ -552,7 +552,7 @@ Connection ~ 7800 2150
 Wire Wire Line
 	7800 2150 7900 2150
 Wire Wire Line
-	7700 2350 7700 2700
+	7700 2350 7700 2600
 Wire Wire Line
 	7700 2700 7850 2700
 Connection ~ 9700 2700
@@ -581,28 +581,26 @@ Text GLabel 7850 3300 0    50   Input ~ 0
 GND
 Text GLabel 7850 3000 0    50   Input ~ 0
 E-CLK
-Text GLabel 7250 2750 0    50   Output ~ 0
+Text GLabel 7000 2750 0    50   Output ~ 0
 EXTCLK
 $Comp
 L Device:R_Small R2
 U 1 1 678932BF
-P 7400 2750
-F 0 "R2" V 7296 2750 50  0000 C CNN
-F 1 "33" V 7295 2750 50  0001 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7400 2750 50  0001 C CNN
-F 3 "~" H 7400 2750 50  0001 C CNN
-	1    7400 2750
+P 7150 2750
+F 0 "R2" V 7046 2750 50  0000 C CNN
+F 1 "33" V 7045 2750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7150 2750 50  0001 C CNN
+F 3 "~" H 7150 2750 50  0001 C CNN
+	1    7150 2750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7300 2750 7250 2750
+	7050 2750 7000 2750
 Wire Wire Line
-	7650 2900 7650 2750
+	7400 2900 7400 2750
 Wire Wire Line
-	7650 2750 7500 2750
-Wire Wire Line
-	7650 2900 7850 2900
-Text Label 7650 2900 2    50   ~ 0
+	7400 2750 7250 2750
+Text Label 7400 2900 2    50   ~ 0
 VCO_OUT
 $Comp
 L Device:R_Small R3
@@ -675,4 +673,28 @@ Wire Wire Line
 	3850 3150 4400 3150
 Wire Wire Line
 	3850 3250 4400 3250
+$Comp
+L Device:R_Small R5
+U 1 1 6790992E
+P 7550 2800
+F 0 "R5" V 7446 2800 50  0000 C CNN
+F 1 "33" V 7445 2800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7550 2800 50  0001 C CNN
+F 3 "~" H 7550 2800 50  0001 C CNN
+	1    7550 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 2900 7850 2900
+Wire Wire Line
+	7450 2800 7450 2600
+Connection ~ 7700 2600
+Wire Wire Line
+	7700 2600 7700 2700
+Text Label 7650 2800 0    50   ~ 0
+SELECT
+Wire Wire Line
+	7650 2800 7850 2800
+Wire Wire Line
+	7450 2600 7700 2600
 $EndSCHEMATC
