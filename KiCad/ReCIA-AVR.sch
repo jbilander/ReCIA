@@ -229,9 +229,9 @@ Text GLabel 5400 4850 3    50   Input ~ 0
 E-CLK
 Text GLabel 5150 5250 2    50   Input ~ 0
 GND
-Text GLabel 4000 3100 1    50   Input ~ 0
+Text GLabel 3750 3100 1    50   Input ~ 0
 VCC
-Text GLabel 4000 3300 3    50   Input ~ 0
+Text GLabel 3750 3300 3    50   Input ~ 0
 GND
 Text GLabel 5650 1250 2    50   Input ~ 0
 VCC
@@ -241,7 +241,6 @@ Text GLabel 7000 4100 3    50   Input ~ 0
 VCC
 Text GLabel 7000 3900 1    50   Input ~ 0
 GND
-NoConn ~ 5500 4850
 Text GLabel 4700 1650 1    50   Input ~ 0
 GND
 Text GLabel 6000 1650 1    50   BiDi ~ 0
@@ -295,26 +294,14 @@ NoConn ~ 6300 1650
 $Comp
 L Device:C_Small C6
 U 1 1 66CAF364
-P 4000 3200
-F 0 "C6" H 4100 3200 50  0000 L CNN
-F 1 "0.01uF (0402)" V 3850 2950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 4000 3200 50  0001 C CNN
-F 3 "~" H 4000 3200 50  0001 C CNN
-	1    4000 3200
+P 3750 3200
+F 0 "C6" H 3850 3200 50  0000 L CNN
+F 1 "0.01uF (0402)" V 3600 2950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3750 3200 50  0001 C CNN
+F 3 "~" H 3750 3200 50  0001 C CNN
+	1    3750 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4150 3250 4150 3300
-Wire Wire Line
-	4150 3300 4000 3300
-Wire Wire Line
-	4150 3250 4400 3250
-Wire Wire Line
-	4150 3150 4150 3100
-Wire Wire Line
-	4000 3100 4150 3100
-Wire Wire Line
-	4150 3150 4400 3150
 $Comp
 L Device:C_Small C2
 U 1 1 66CBB25E
@@ -384,7 +371,6 @@ Wire Wire Line
 	5100 5100 5150 5100
 Wire Wire Line
 	5150 5100 5150 5250
-NoConn ~ 4400 3050
 $Comp
 L ReCIA:74AHCT1G17 U2
 U 1 1 677A8B23
@@ -653,4 +639,40 @@ Wire Wire Line
 	10000 3500 10000 3200
 Wire Wire Line
 	10000 3000 10000 2900
+$Comp
+L Device:R_Small R4
+U 1 1 678C2CF1
+P 7400 3300
+F 0 "R4" V 7296 3300 50  0000 C CNN
+F 1 "33" V 7295 3300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7400 3300 50  0001 C CNN
+F 3 "~" H 7400 3300 50  0001 C CNN
+	1    7400 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 3100 7500 3100
+Wire Wire Line
+	7500 3100 7500 3300
+Text Label 7500 3100 2    50   ~ 0
+FIN-B
+Text GLabel 7250 3300 0    50   Input ~ 0
+CLK_COUNT
+Wire Wire Line
+	7300 3300 7250 3300
+Text GLabel 4400 3050 0    50   Output ~ 0
+CLK_COUNT
+NoConn ~ 5500 4850
+Wire Wire Line
+	3750 3300 3850 3300
+Wire Wire Line
+	3850 3300 3850 3250
+Wire Wire Line
+	3850 3150 3850 3100
+Wire Wire Line
+	3850 3100 3750 3100
+Wire Wire Line
+	3850 3150 4400 3150
+Wire Wire Line
+	3850 3250 4400 3250
 $EndSCHEMATC
