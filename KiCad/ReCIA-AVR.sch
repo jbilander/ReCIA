@@ -611,6 +611,27 @@ Wire Wire Line
 Connection ~ 9900 3200
 Text GLabel 7850 3000 0    50   Input ~ 0
 E-CLK
-Text GLabel 7850 2900 0    50   Output ~ 0
+Text GLabel 7250 2750 0    50   Output ~ 0
 EXTCLK
+$Comp
+L Device:R_Small R2
+U 1 1 678932BF
+P 7400 2750
+F 0 "R2" V 7296 2750 50  0000 C CNN
+F 1 "33" V 7295 2750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7400 2750 50  0001 C CNN
+F 3 "~" H 7400 2750 50  0001 C CNN
+	1    7400 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 2750 7250 2750
+Wire Wire Line
+	7650 2900 7650 2750
+Wire Wire Line
+	7650 2750 7500 2750
+Wire Wire Line
+	7650 2900 7850 2900
+Text Label 7650 2900 2    50   ~ 0
+EXT-CLK
 $EndSCHEMATC
