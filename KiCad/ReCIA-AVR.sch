@@ -477,4 +477,140 @@ Wire Wire Line
 	2050 4300 2250 4300
 Text GLabel 2050 4600 3    50   Input ~ 0
 GND
+$Comp
+L Device:L_Small L1
+U 1 1 6782C3A7
+P 8550 2350
+F 0 "L1" V 8735 2350 50  0000 C CNN
+F 1 "100uH" V 8644 2350 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8550 2350 50  0001 C CNN
+F 3 "~" H 8550 2350 50  0001 C CNN
+	1    8550 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Small L2
+U 1 1 6782D183
+P 9700 2500
+F 0 "L2" H 9900 2450 50  0000 R CNN
+F 1 "100uH" H 10000 2550 50  0000 R CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9700 2500 50  0001 C CNN
+F 3 "~" H 9700 2500 50  0001 C CNN
+	1    9700 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9550 2700 9700 2700
+$Comp
+L Device:C_Small C8
+U 1 1 67831839
+P 7900 2250
+F 0 "C8" H 7800 2250 50  0000 R CNN
+F 1 "10uF" H 7800 2150 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7900 2250 50  0001 C CNN
+F 3 "~" H 7900 2250 50  0001 C CNN
+	1    7900 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 67833368
+P 10250 2600
+F 0 "C10" H 10050 2600 50  0000 L CNN
+F 1 "10uF" H 10000 2500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 10250 2600 50  0001 C CNN
+F 3 "~" H 10250 2600 50  0001 C CNN
+	1    10250 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9700 2350 9700 2400
+Wire Wire Line
+	9700 2600 9700 2700
+$Comp
+L Device:C_Small C7
+U 1 1 67838FC9
+P 7700 2250
+F 0 "C7" H 7800 2250 50  0000 L CNN
+F 1 "0.01uF" H 7800 2150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7700 2250 50  0001 C CNN
+F 3 "~" H 7700 2250 50  0001 C CNN
+	1    7700 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7900 2350 7700 2350
+Connection ~ 7900 2350
+$Comp
+L Device:C_Small C9
+U 1 1 6783A777
+P 10050 2600
+F 0 "C9" H 10150 2600 50  0000 L CNN
+F 1 "0.01uF" H 10050 2500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10050 2600 50  0001 C CNN
+F 3 "~" H 10050 2600 50  0001 C CNN
+	1    10050 2600
+	-1   0    0    1   
+$EndComp
+Text GLabel 7800 2100 1    50   Input ~ 0
+GND
+Wire Wire Line
+	7900 2350 8450 2350
+Wire Wire Line
+	8650 2350 9700 2350
+Wire Wire Line
+	7700 2150 7800 2150
+Wire Wire Line
+	7800 2100 7800 2150
+Connection ~ 7800 2150
+Wire Wire Line
+	7800 2150 7900 2150
+Wire Wire Line
+	7700 2350 7700 2700
+Wire Wire Line
+	7700 2700 7850 2700
+Connection ~ 9700 2700
+Connection ~ 7700 2350
+Connection ~ 10050 2700
+Wire Wire Line
+	9700 2700 10050 2700
+Wire Wire Line
+	10050 2700 10250 2700
+Wire Wire Line
+	10250 2500 10050 2500
+Text GLabel 10150 2500 1    50   Input ~ 0
+GND
+Text GLabel 9200 2350 1    50   Input ~ 0
+VCC
+Text GLabel 9900 3100 2    50   Input ~ 0
+GND
+Wire Wire Line
+	9550 3000 9900 3000
+Wire Wire Line
+	9900 3000 9900 3100
+Wire Wire Line
+	9550 3100 9900 3100
+Wire Wire Line
+	9550 3200 9900 3200
+Wire Wire Line
+	9900 3200 9900 3100
+Connection ~ 9900 3100
+Text Label 7700 2550 2    50   ~ 0
+LOGIC_VDD
+Text Label 10550 2700 0    50   ~ 0
+VCO_VDD
+Wire Wire Line
+	10550 2700 10250 2700
+Connection ~ 10250 2700
+Text GLabel 7850 3300 0    50   Input ~ 0
+GND
+Wire Wire Line
+	9550 3300 9900 3300
+Wire Wire Line
+	9900 3300 9900 3200
+Connection ~ 9900 3200
+Text GLabel 7850 3000 0    50   Input ~ 0
+E-CLK
+Text GLabel 7850 2900 0    50   Output ~ 0
+EXTCLK
 $EndSCHEMATC
