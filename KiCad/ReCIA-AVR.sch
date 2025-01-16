@@ -572,7 +572,7 @@ Text GLabel 9500 1850 2    50   Input ~ 0
 GND
 Text Label 7650 1400 2    50   ~ 0
 LOGIC_VDD
-Text Label 10700 1550 0    50   ~ 0
+Text Label 10500 1550 0    50   ~ 0
 VCO_VDD
 Connection ~ 10200 1550
 Text GLabel 7800 2150 0    50   Input ~ 0
@@ -604,7 +604,7 @@ $Comp
 L Device:R_Small R3
 U 1 1 678A30D6
 P 9950 1950
-F 0 "R3" V 9950 1950 50  0000 C CNN
+F 0 "R3" H 10050 1950 50  0000 C CNN
 F 1 "33" V 9845 1950 50  0001 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 9950 1950 50  0001 C CNN
 F 3 "~" H 9950 1950 50  0001 C CNN
@@ -753,4 +753,38 @@ Wire Wire Line
 	10200 1550 10850 1550
 Wire Wire Line
 	9500 1650 10450 1650
+$Comp
+L Device:R_Small R7
+U 1 1 679B48E0
+P 10150 1750
+F 0 "R7" V 10250 1750 50  0000 C CNN
+F 1 "33" V 10045 1750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 10150 1750 50  0001 C CNN
+F 3 "~" H 10150 1750 50  0001 C CNN
+	1    10150 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9950 1750 10050 1750
+Connection ~ 9950 1750
+Wire Wire Line
+	10250 1750 10350 1750
+Wire Wire Line
+	10350 1750 10350 2150
+$Comp
+L Device:C_Small C13
+U 1 1 679B97A4
+P 10150 2150
+F 0 "C13" V 10250 2100 50  0000 L CNN
+F 1 "0.1uF" H 9550 2200 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10150 2150 50  0001 C CNN
+F 3 "~" H 10150 2150 50  0001 C CNN
+	1    10150 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10050 2150 9800 2150
+Connection ~ 9800 2150
+Wire Wire Line
+	10250 2150 10350 2150
 $EndSCHEMATC
