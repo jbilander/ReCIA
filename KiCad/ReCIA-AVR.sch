@@ -267,8 +267,6 @@ Text GLabel 4400 2650 0    50   Input ~ 0
 A2
 Text GLabel 4400 2750 0    50   Input ~ 0
 A3
-Text GLabel 6100 1650 1    50   BiDi ~ 0
-UDPI
 Text GLabel 5000 1650 1    50   Input ~ 0
 EXTCLK
 Text GLabel 4400 2950 0    50   Output ~ 0
@@ -787,4 +785,19 @@ F 3 "~" H 10150 1750 50  0001 C CNN
 	1    10150 1750
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 679FD8AD
+P 6100 950
+F 0 "J?" V 6064 862 50  0000 R CNN
+F 1 "Conn_01x01" V 5973 862 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6100 950 50  0001 C CNN
+F 3 "~" H 6100 950 50  0001 C CNN
+	1    6100 950 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 1650 6100 1150
+Text Label 6100 1300 0    50   ~ 0
+UPDI
 $EndSCHEMATC
