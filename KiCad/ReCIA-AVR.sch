@@ -786,10 +786,10 @@ F 3 "~" H 10150 1750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J1
 U 1 1 679FD8AD
 P 6100 950
-F 0 "J?" V 6064 862 50  0000 R CNN
+F 0 "J1" V 6064 862 50  0000 R CNN
 F 1 "Conn_01x01" V 5973 862 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6100 950 50  0001 C CNN
 F 3 "~" H 6100 950 50  0001 C CNN
